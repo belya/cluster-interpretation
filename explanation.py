@@ -184,7 +184,7 @@ class ClustersExplanation:
                     continue
                 # TODO check if this is a correct merge
                 rule = graph_df.agg({
-                    "threshold": "min",
+                    "threshold": "max",
                     "upper": "max",
                     "lower": "min"
                 }).to_dict()
